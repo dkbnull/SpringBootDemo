@@ -5,9 +5,10 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
- * 读取properties配置文件
+ * 通过@ConfigurationProperties 读取properties配置文件
  *
  * @author dukunbiao(null)  2018-08-22
+ *         https://github.com/dkbnull/SpringBootDemo
  */
 @Component
 @ConfigurationProperties(prefix = "demo")

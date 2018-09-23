@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 入口类
  *
  * @author dukunbiao(null)  2018-08-18
+ *         https://github.com/dkbnull/SpringBootDemo
  */
 @RestController
 public class GatewayController {
@@ -26,6 +27,11 @@ public class GatewayController {
 
     @RequestMapping(value = "/gateway")
     public String gateway() {
+        return "Hello World";
+    }
+
+    @RequestMapping(value = "/properties")
+    public String properties() {
         return "get properties value by ''@Value'' :" +
                 //1、使用@Value注解读取
                 " name=" + configBeanValue.name +

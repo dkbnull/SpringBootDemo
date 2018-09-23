@@ -4,9 +4,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
- * 读取 properties 配置文件
+ * 通过@Value 读取properties配置文件
  *
  * @author dukunbiao(null)  2018-08-22
+ *         https://github.com/dkbnull/SpringBootDemo
  */
 @Component
 public class ConfigBeanValue {
