@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  *         https://github.com/dkbnull/SpringBootDemo
  */
 @RestController
-public class GatewayController {
+public class GatewayController extends BaseController {
 
     @Autowired
     private ConfigBeanValue configBeanValue;
