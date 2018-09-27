@@ -21,6 +21,8 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public JSONObject exceptionHandler(HttpServletRequest request, Exception e) {
         LoggerUtils.getLogger().error("[" + Thread.currentThread().getId() + "] " + e.toString());
+        LoggerUtils.getLogger().debug("[" + Thread.currentThread().getId() + "] ", e);
+
         return ReturnMessage.createReturnMessage("4000", e.getMessage());
     }
 }
