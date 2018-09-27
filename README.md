@@ -16,3 +16,9 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 * 微信：[https://mp.weixin.qq.com/s/swtkNq6CLMsP4uc4PgaVHg](https://mp.weixin.qq.com/s/swtkNq6CLMsP4uc4PgaVHg)
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404275977214638710](https://weibo.com/ttarticle/p/show?id=2309404275977214638710)
 
+## Spring Boot入门：使用AOP实现拦截器
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/82847647](https://blog.csdn.net/dkbnull/article/details/82847647)
+* 微信：[https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q](https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404288955024574905](https://weibo.com/ttarticle/p/show?id=2309404288955024574905)
+
