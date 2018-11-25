@@ -13,8 +13,8 @@ import java.util.regex.Pattern;
  */
 public class StringUtils {
 
-    private static final String STRING_TYPE_RIGHT = "R";
-    private static final String STRING_TYPE_LEFT = "L";
+    public static final String STRING_TYPE_RIGHT = "R";
+    public static final String STRING_TYPE_LEFT = "L";
 
     private static String DIGITS = "0123456789abcdef";
 
@@ -52,13 +52,13 @@ public class StringUtils {
      * @return true/false
      */
     public static boolean areNotEmpty(String... values) {
-        boolean result = true;
         if (values == null || values.length == 0) {
-            result = false;
-        } else {
-            for (String value : values) {
-                result &= !isEmpty(value);
-            }
+            return false;
+        }
+
+        boolean result = true;
+        for (String value : values) {
+            result &= !isEmpty(value);
         }
         return result;
     }
@@ -81,6 +81,32 @@ public class StringUtils {
      */
     public static boolean isInteger(String value) {
         return (!isEmpty(value)) && Pattern.compile("-?[0-9]*").matcher(value).matches();
+    }
+
+    /**
+     * 按要求截取指定长度字符串
+     *
+     * @param value      待截取字符串
+     * @param beginIndex 起始位置
+     * @param endIndex   结束位置
+     * @return 截取后字符串
+     */
+    public static String substringValue(String value, int beginIndex, int endIndex) {
+        if (isEmpty(value)) {
+            return "";
+        }
+
+        if (beginIndex < 0) {
+            beginIndex = 0;
+        }
+        if (endIndex > value.length()) {
+            endIndex = value.length();
+        }
+        if (endIndex - beginIndex < 0) {
+            return "";
+        }
+
+        return value.substring(beginIndex, endIndex);
     }
 
     /**
@@ -132,7 +158,24 @@ public class StringUtils {
      * @return 数值
      */
     public static int toInt(String value, int defaultValue) {
-        if ((!isEmpty(value)) && (isInteger(value))) return Integer.valueOf(value);
+        if ((!isEmpty(value)) && (isInteger(value))) {
+            return Integer.valueOf(value);
+        }
+
+        return defaultValue;
+    }
+
+    /**
+     * String转long，格式不正确则返回默认值
+     *
+     * @param value        字符串
+     * @param defaultValue 默认值
+     * @return 数值
+     */
+    public static long toLong(String value, long defaultValue) {
+        if ((!isEmpty(value)) && (isInteger(value))) {
+            return Long.valueOf(value);
+        }
 
         return defaultValue;
     }
@@ -145,7 +188,9 @@ public class StringUtils {
      * @return 数值
      */
     public static double toDouble(String value, double defaultValue) {
-        if ((!isEmpty(value)) && (isNumeric(value))) return Double.valueOf(value);
+        if ((!isEmpty(value)) && (isNumeric(value))) {
+            return Double.valueOf(value);
+        }
 
         return defaultValue;
     }
@@ -167,13 +212,9 @@ public class StringUtils {
      * @return 16进制字符串
      */
     public static String byteToHex(byte[] data) {
-        return byteToHex(data, data.length);
-    }
-
-    private static String byteToHex(byte[] data, int length) {
         StringBuffer sb = new StringBuffer();
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < data.length; i++) {
             int v = data[i] & 0xff;
 
             sb.append(DIGITS.charAt(v >> 4));
@@ -202,13 +243,13 @@ public class StringUtils {
     public static byte[] hexToByte(String value) {
         int m, n;
         int l = value.length() / 2;
-        byte[] ret = new byte[l];
+        byte[] bytes = new byte[l];
         for (int i = 0; i < l; i++) {
             m = i * 2 + 1;
             n = m + 1;
-            ret[i] = uniteBytes(value.substring(i * 2, m), value.substring(m, n));
+            bytes[i] = uniteBytes(value.substring(i * 2, m), value.substring(m, n));
         }
-        return ret;
+        return bytes;
     }
 
     private static byte uniteBytes(String value0, String value1) {
@@ -221,26 +262,26 @@ public class StringUtils {
     /**
      * 获取指定编码格式字符串
      *
-     * @param value      待转化字符串
-     * @param oldCharset 待转化字符串字符集
-     * @param newCharset 转化后字符串字符集
+     * @param value       待转化字符串
+     * @param fromCharset 待转化字符串字符集
+     * @param toCharset   转化后字符串字符集
      * @return 转换后字符串
      * @throws Exception
      */
-    public static String toCharsetString(String value, String oldCharset, String newCharset) throws Exception {
-        return new String(value.getBytes(oldCharset), newCharset);
+    public static String toCharsetString(String value, String fromCharset, String toCharset) throws Exception {
+        return new String(value.getBytes(fromCharset), toCharset);
     }
 
     /**
      * 获取UTF-8编码格式字符串
      *
-     * @param value   待转化字符串
-     * @param charset 待转化字符串字符集
+     * @param value       待转化字符串
+     * @param fromCharset 待转化字符串字符集
      * @return 转换后字符串
      * @throws Exception
      */
-    public static String toUTF8String(String value, String charset) throws Exception {
-        return new String(value.getBytes(charset), UtilConstants.CHARSET_UTF8);
+    public static String toUTF8String(String value, String fromCharset) throws Exception {
+        return new String(value.getBytes(fromCharset), UtilConstants.CHARSET_UTF8);
     }
 
     /**
@@ -263,8 +304,21 @@ public class StringUtils {
      * @return 补全后字符串
      */
     public static String stringPadding(String value, int length, String tag, String charset) {
+        if (isEmpty(value)) {
+            value = "";
+        }
+        if (length <= 0) {
+            return value;
+        }
+
         if (value.length() >= length) {
-            return substringValue(value, length, tag);
+            if (STRING_TYPE_RIGHT.equalsIgnoreCase(tag)) {
+                return substringValue(value, length, STRING_TYPE_LEFT);
+            } else if (STRING_TYPE_LEFT.equalsIgnoreCase(tag)) {
+                return substringValue(value, length, STRING_TYPE_RIGHT);
+            } else {
+                return value;
+            }
         }
 
         try {
@@ -297,8 +351,21 @@ public class StringUtils {
      * @return 补全后字符串
      */
     public static String stringPadding(String value, int length, String fill, String tag, String charset) {
+        if (isEmpty(value)) {
+            value = "";
+        }
+        if (length <= 0) {
+            return value;
+        }
+
         if (value.length() >= length) {
-            return substringValue(value, length, tag);
+            if (STRING_TYPE_RIGHT.equalsIgnoreCase(tag)) {
+                return substringValue(value, length, STRING_TYPE_LEFT);
+            } else if (STRING_TYPE_LEFT.equalsIgnoreCase(tag)) {
+                return substringValue(value, length, STRING_TYPE_RIGHT);
+            } else {
+                return value;
+            }
         }
 
         int lengthValue = 0;

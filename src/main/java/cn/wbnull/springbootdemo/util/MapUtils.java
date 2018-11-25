@@ -1,5 +1,7 @@
 package cn.wbnull.springbootdemo.util;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.Map;
 
 /**
@@ -32,7 +34,9 @@ public class MapUtils {
      * @return value值
      */
     public static String getMapString(Map map, String key) {
-        if (isEmpty(map) || StringUtils.isEmpty(key)) return "";
+        if (isEmpty(map) || StringUtils.isEmpty(key)) {
+            return "";
+        }
 
         if (map.containsKey(key) && map.get(key) != null) {
             return String.valueOf(map.get(key));
@@ -50,7 +54,9 @@ public class MapUtils {
      * @throws Exception
      */
     public static int getMapInt(Map map, String key) throws Exception {
-        if (isEmpty(map) || StringUtils.isEmpty(key)) return 0;
+        if (isEmpty(map) || StringUtils.isEmpty(key)) {
+            return 0;
+        }
 
         if (map.containsKey(key) && map.get(key) != null) {
             return Integer.valueOf(map.get(key).toString());
@@ -68,7 +74,9 @@ public class MapUtils {
      * @return value值
      */
     public static int getMapInt(Map map, String key, int defaultValue) {
-        if (isEmpty(map) || StringUtils.isEmpty(key)) return defaultValue;
+        if (isEmpty(map) || StringUtils.isEmpty(key)) {
+            return defaultValue;
+        }
 
         try {
             if (map.containsKey(key) && map.get(key) != null) {
@@ -90,7 +98,9 @@ public class MapUtils {
      * @throws Exception
      */
     public static double getMapDouble(Map map, String key) throws Exception {
-        if (isEmpty(map) || StringUtils.isEmpty(key)) return 0d;
+        if (isEmpty(map) || StringUtils.isEmpty(key)) {
+            return 0d;
+        }
 
         if (map.containsKey(key) && map.get(key) != null) {
             return Double.valueOf(map.get(key).toString());
@@ -108,7 +118,9 @@ public class MapUtils {
      * @return value值
      */
     public static double getMapDouble(Map map, String key, double defaultValue) {
-        if (isEmpty(map) || StringUtils.isEmpty(key)) return defaultValue;
+        if (isEmpty(map) || StringUtils.isEmpty(key)) {
+            return defaultValue;
+        }
 
         try {
             if (map.containsKey(key) && map.get(key) != null) {
@@ -119,5 +131,15 @@ public class MapUtils {
         }
 
         return defaultValue;
+    }
+
+    /**
+     * Java Bean 转Map
+     *
+     * @param object 待转化Java Bean
+     * @return Map
+     */
+    public static Map<String, String> javaBeanToMap(Object object) {
+        return JSONUtils.JSONToMap(JSONObject.parseObject(JSONObject.toJSONString(object)));
     }
 }

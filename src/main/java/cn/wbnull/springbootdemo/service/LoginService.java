@@ -1,7 +1,7 @@
 package cn.wbnull.springbootdemo.service;
 
+import cn.wbnull.springbootdemo.constant.ReturnMessage;
 import cn.wbnull.springbootdemo.util.JSONUtils;
-import cn.wbnull.springbootdemo.util.LoggerUtils;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
 
@@ -20,14 +20,9 @@ public class LoginService {
         JSONObject requestParams = JSONObject.parseObject(data.toString());
         if (JSONUtils.getJSONString(requestParams, "username").equalsIgnoreCase(
                 JSONUtils.getJSONString(requestParams, "password"))) {
-            responseParams.put("code", "1000");
-            responseParams.put("message", "SUCCESS");
+            return ReturnMessage.createReturnMessage("2000", "login success");
         } else {
-            responseParams.put("code", "2000");
-            responseParams.put("message", "FAIL");
+            return ReturnMessage.createReturnMessage("2001", "login fail");
         }
-
-        LoggerUtils.getLogger().info("[" + Thread.currentThread().getId() + "] LoginService");
-        return responseParams;
     }
 }

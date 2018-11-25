@@ -2,6 +2,8 @@ package cn.wbnull.springbootdemo.util;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.*;
+
 /**
  * JSON 工具类
  *
@@ -93,6 +95,24 @@ public class JSONUtils {
      */
     public static JSONObject javaBeanToJSON(Object object) throws Exception {
         return JSONObject.parseObject(JSONObject.toJSONString(object));
+    }
+
+    /**
+     * JSON 转 Map
+     *
+     * @param json 待转化JSON
+     * @return Map
+     */
+    public static Map<String, String> JSONToMap(JSONObject json) {
+        Map<String, String> map = new HashMap<>();
+        List<String> keys = new ArrayList<>(json.keySet());
+        Collections.sort(keys);
+
+        for (String key : keys) {
+            map.put(key, json.get(key).toString());
+        }
+
+        return map;
     }
 
     /**

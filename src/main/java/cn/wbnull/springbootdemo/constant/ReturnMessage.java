@@ -1,6 +1,5 @@
-package cn.wbnull.springbootdemo.boot;
+package cn.wbnull.springbootdemo.constant;
 
-import cn.wbnull.springbootdemo.constant.DemoConstants;
 import com.alibaba.fastjson.JSONObject;
 
 /**

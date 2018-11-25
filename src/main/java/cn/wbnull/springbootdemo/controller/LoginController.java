@@ -1,6 +1,5 @@
 package cn.wbnull.springbootdemo.controller;
 
-import cn.wbnull.springbootdemo.util.LoggerUtils;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +22,6 @@ public class LoginController extends BaseController {
             @RequestParam(value = "timestamp") String timestamp,
             @RequestParam(value = "data") String data
     ) throws Exception {
-        LoggerUtils.getLogger().info("[" + Thread.currentThread().getId() + "] LoginController");
         return baseService.login(data);
     }
 }

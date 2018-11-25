@@ -42,33 +42,34 @@ public class DateUtils {
     /**
      * 时间字符串格式化
      *
-     * @param dateValue    待格式化时间字符串
-     * @param formatChange 要格式化的格式
+     * @param dateValue 待格式化时间字符串
+     * @param toFormat  要格式化的格式
      * @return 时间字符串
      */
-    public static String dateFormat(String dateValue, String formatChange) throws Exception {
-        if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(formatChange)) return null;
+    public static String dateFormat(String dateValue, String toFormat) throws Exception {
+        if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(toFormat)) {
+            return null;
+        }
 
         Date date = new SimpleDateFormat(UtilConstants.DATE_FORMAT, Locale.CHINA).parse(dateValue);
-        return dateFormat(date, formatChange);
+        return dateFormat(date, toFormat);
     }
 
     /**
      * 时间字符串格式化
      *
-     * @param dateValue    待格式化时间字符串
-     * @param formatValue  待格式化时间字符串格式
-     * @param formatChange 要格式化的格式
+     * @param dateValue  待格式化时间字符串
+     * @param fromFormat 待格式化时间字符串格式
+     * @param toFormat   要格式化的格式
      * @return 时间字符串
      */
-    public static String dateFormat(String dateValue, String formatValue, String formatChange) throws Exception {
-        if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(formatValue) ||
-                StringUtils.isEmpty(formatChange)) {
+    public static String dateFormat(String dateValue, String fromFormat, String toFormat) throws Exception {
+        if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(fromFormat) || StringUtils.isEmpty(toFormat)) {
             return null;
         }
 
-        Date date = new SimpleDateFormat(formatValue, Locale.CHINA).parse(dateValue);
-        return dateFormat(date, formatChange);
+        Date date = new SimpleDateFormat(fromFormat, Locale.CHINA).parse(dateValue);
+        return dateFormat(date, toFormat);
     }
 
     /**

@@ -1,5 +1,6 @@
 package cn.wbnull.springbootdemo.boot;
 
+import cn.wbnull.springbootdemo.constant.ReturnMessage;
 import cn.wbnull.springbootdemo.util.LoggerUtils;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -21,8 +22,8 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public JSONObject exceptionHandler(HttpServletRequest request, Exception e) {
         LoggerUtils.getLogger().error("[" + Thread.currentThread().getId() + "] " + e.toString());
-        LoggerUtils.getLogger().debug("[" + Thread.currentThread().getId() + "] ", e);
+        LoggerUtils.getLogger().error("[" + Thread.currentThread().getId() + "] ", e);
 
-        return ReturnMessage.createReturnMessage("4000", e.getMessage());
+        return ReturnMessage.createReturnMessage("5000", e.getMessage());
     }
 }

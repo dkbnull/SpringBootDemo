@@ -1,4 +1,4 @@
-package cn.wbnull.springbootdemo.boot.aop;
+package cn.wbnull.springbootdemo.aop;
 
 import cn.wbnull.springbootdemo.boot.GlobalException;
 import cn.wbnull.springbootdemo.constant.DemoConstants;
@@ -13,6 +13,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
  * 验签
@@ -41,12 +43,24 @@ public class SignAop {
      */
     @Before("signAop()")
     public void doBefore(JoinPoint joinPoint) throws Exception {
+        String uri;
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        if (attributes != null && attributes.getRequest() != null) {
+            uri = attributes.getRequest().getRequestURI();
+        } else {
+            uri = joinPoint.getSignature().getName();
+        }
+
+        if (uri.contains("gateway") || uri.contains("properties")) {
+            return;
+        }
+
         Object[] objects = joinPoint.getArgs();
         String sign = objects[0].toString();
         String timestamp = objects[1].toString();
         String data = objects[2].toString();
 
-        String strLog = "[" + Thread.currentThread().getId() + "]" + "[请求方法] " + joinPoint.getSignature().getName() + " ||";
+        String strLog = "[" + Thread.currentThread().getId() + "]" + "[请求方法] " + uri + " ||";
         LoggerUtils.getLogger().info(strLog + "[请求参数] sign=" + sign + ",timestamp=" + timestamp + ",data=" + data);
 
         if (StringUtils.isEmpty(sign) || StringUtils.isEmpty(timestamp) ||
@@ -71,6 +85,18 @@ public class SignAop {
      */
     @AfterReturning(value = "signAop()", returning = "params")
     public JSONObject doAfterReturning(JoinPoint joinPoint, JSONObject params) {
+        String uri;
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        if (attributes != null && attributes.getRequest() != null) {
+            uri = attributes.getRequest().getRequestURI();
+        } else {
+            uri = joinPoint.getSignature().getName();
+        }
+
+        if (uri.contains("gateway") || uri.contains("properties")) {
+            return params;
+        }
+
         String data = JSONUtils.getJSONString(params, DemoConstants.DATA);
         long timestamp = System.currentTimeMillis() / 1000;
 
@@ -80,7 +106,8 @@ public class SignAop {
         params.put(DemoConstants.TIMESTAMP, timestamp);
         params.put(DemoConstants.SIGN, sign);
 
-        String strLog = "[" + Thread.currentThread().getId() + "]" + "[请求方法] " + joinPoint.getSignature().getName() + " ||";
+
+        String strLog = "[" + Thread.currentThread().getId() + "]" + "[请求方法] " + uri + " ||";
         LoggerUtils.getLogger().info(strLog + "[返回参数] " + params);
 
         return params;
