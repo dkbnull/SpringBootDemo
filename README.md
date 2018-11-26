@@ -22,3 +22,9 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 * 微信：[https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q](https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q)
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404288955024574905](https://weibo.com/ttarticle/p/show?id=2309404288955024574905)
 
+##  Spring Boot入门：自定义log4j日志输出 
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/84558062](https://blog.csdn.net/dkbnull/article/details/84558062)
+* 微信：[https://mp.weixin.qq.com/s/TY0lb921oZlvz2mnH_L2jg](https://mp.weixin.qq.com/s/TY0lb921oZlvz2mnH_L2jg)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404310748749823379](https://weibo.com/ttarticle/p/show?id=2309404310748749823379)
+
