@@ -30,7 +30,7 @@ public class SignAop {
      * 声明一个切入点，范围为controller包下所有的类
      * 注：作为切入点签名的方法必须返回void类型
      */
-    @Pointcut("execution(public * cn.wbnull.springbootdemo.controller.*.*(..))")
+    @Pointcut("execution(public * cn.wbnull.springbootdemo.controller.LoginController.*(..))")
     private void signAop() {
 
     }
