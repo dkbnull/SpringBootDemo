@@ -12,5 +12,5 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 #
 mybatis:
-  mapper-locations: classpath:mapper/*.xml  #\u5BF9\u5E94mapper\u6620\u5C04xml\u6587\u4EF6\u6240\u5728\u8DEF\u5F84
-  type-aliases-package: cn.wbnull.springbootdemo.model  #\u5BF9\u5E94\u5B9E\u4F53\u7C7B\u8DEF\u5F84
+  mapper-locations: classpath:mapper/*.xml  #对应mapper映射xml文件所在路径
+  type-aliases-package: cn.wbnull.springbootdemo.model  #对应实体类路径
