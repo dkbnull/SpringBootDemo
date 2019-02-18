@@ -13,7 +13,6 @@ import java.util.Map;
 public class MapUtils {
 
     private MapUtils() {
-
     }
 
     /**

@@ -1,7 +1,7 @@
 package cn.wbnull.springbootdemo.controller;
 
-import cn.wbnull.springbootdemo.config.ConfigProp;
-import cn.wbnull.springbootdemo.config.ConfigValue;
+import cn.wbnull.springbootdemo.config.PropConfig;
+import cn.wbnull.springbootdemo.config.PropConfigV2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
@@ -19,27 +19,27 @@ import org.springframework.web.bind.annotation.RestController;
 public class PropController {
 
     @Autowired
-    private ConfigValue configValue;
+    private PropConfig propConfig;
 
     @Autowired
     private Environment environment;
 
     @Autowired
-    private ConfigProp configProp;
+    private PropConfigV2 propConfigV2;
 
     @RequestMapping(value = "/properties")
     public String properties() {
         return "get properties value by ''@Value'' :" +
                 //1、使用@Value注解读取
-                " name=" + configValue.name +
-                " , age=" + configValue.age +
+                " name=" + propConfig.name +
+                " , age=" + propConfig.age +
                 "<p>get properties value by ''Environment'' :" +
                 //2、使用Environment读取
                 " sex=" + environment.getProperty("demo.sex") +
                 " , address=" + environment.getProperty("demo.address") +
                 "<p>get properties value by ''@ConfigurationProperties'' :" +
                 //3、使用@ConfigurationProperties注解读取
-                " phone=" + configProp.getPhone() +
-                " , wife=" + configProp.getWife();
+                " phone=" + propConfigV2.getPhone() +
+                " , wife=" + propConfigV2.getWife();
     }
 }

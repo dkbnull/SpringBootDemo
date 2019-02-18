@@ -19,7 +19,6 @@ public class StringUtils {
     private static String DIGITS = "0123456789abcdef";
 
     private StringUtils() {
-
     }
 
     /**
@@ -289,6 +288,7 @@ public class StringUtils {
      *
      * @param value 待转化字符串
      * @return UTF-8编码格式字符串
+     * @throws Exception
      */
     public static String toUTF8String(String value) throws Exception {
         return new String(value.getBytes(UtilConstants.CHARSET_GB2312), UtilConstants.CHARSET_UTF8);

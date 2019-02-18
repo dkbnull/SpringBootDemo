@@ -20,9 +20,9 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public JSONObject exceptionHandler(HttpServletRequest request, Exception e) {
-        LoggerUtils.getLogger().error("[" + Thread.currentThread().getId() + "] " + e.toString());
-        LoggerUtils.getLogger().error("[" + Thread.currentThread().getId() + "] ", e);
+    public JSONObject exceptionHandler(HttpServletRequest servletRequest, Exception e) {
+        LoggerUtils.error(servletRequest.getRemoteAddr(), "中台返回前台", servletRequest.getRequestURI(), e.toString());
+        LoggerUtils.error(servletRequest.getRemoteAddr(), "中台返回前台，异常堆栈信息", servletRequest.getRequestURI(), e);
 
         return ReturnMessage.createReturnMessage("5000", e.getMessage());
     }

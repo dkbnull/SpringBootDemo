@@ -15,7 +15,6 @@ public class JSONUtils {
     private static final String WHITESPACE = "   ";
 
     private JSONUtils() {
-
     }
 
     /**
@@ -93,7 +92,7 @@ public class JSONUtils {
      * @param object 待转化Java Bean
      * @return JSONObject
      */
-    public static JSONObject javaBeanToJSON(Object object) throws Exception {
+    public static JSONObject javaBeanToJSON(Object object) {
         return JSONObject.parseObject(JSONObject.toJSONString(object));
     }
 

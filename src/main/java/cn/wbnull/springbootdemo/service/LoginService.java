@@ -15,8 +15,6 @@ import org.springframework.stereotype.Service;
 public class LoginService {
 
     public JSONObject login(Object data) throws Exception {
-        JSONObject responseParams = new JSONObject();
-
         JSONObject requestParams = JSONObject.parseObject(data.toString());
         if (JSONUtils.getJSONString(requestParams, "username").equalsIgnoreCase(
                 JSONUtils.getJSONString(requestParams, "password"))) {

@@ -15,7 +15,6 @@ import java.util.Locale;
 public class DateUtils {
 
     private DateUtils() {
-
     }
 
     /**

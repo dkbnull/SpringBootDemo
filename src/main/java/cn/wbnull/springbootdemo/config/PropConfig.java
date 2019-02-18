@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  *         https://github.com/dkbnull/SpringBootDemo
  */
 @Component
-public class ConfigValue {
+public class PropConfig {
 
     @Value("${demo.name}")
     public String name;

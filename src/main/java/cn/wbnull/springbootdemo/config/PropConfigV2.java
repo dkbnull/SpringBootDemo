@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix = "demo")
-@PropertySource(value = "config.properties")
-public class ConfigProp {
+@PropertySource(value = "demo.properties")
+public class PropConfigV2 {
 
     private String phone;
     private String wife;
