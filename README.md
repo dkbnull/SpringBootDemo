@@ -34,3 +34,7 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 * 微信：[https://mp.weixin.qq.com/s/TVtmbSBrctv9R9EucIggYg](https://mp.weixin.qq.com/s/TVtmbSBrctv9R9EucIggYg)
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404339889012367676](https://weibo.com/ttarticle/p/show?id=2309404339889012367676)
 
+# Spring Boot入门：使用Schedule实现定时任务
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/87659898](https://blog.csdn.net/dkbnull/article/details/87659898)
+

@@ -14,3 +14,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #对应mapper映射xml文件所在路径
   type-aliases-package: cn.wbnull.springbootdemo.model  #对应实体类路径
+#
+demo:
+  corn: 0/7 * * * * ?
+  cornV2: 0/22 * * * * ?

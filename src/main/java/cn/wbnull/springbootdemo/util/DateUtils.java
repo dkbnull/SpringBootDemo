@@ -20,6 +20,15 @@ public class DateUtils {
     /**
      * 时间格式化
      *
+     * @return 时间字符串
+     */
+    public static String dateFormat() {
+        return new SimpleDateFormat(UtilConstants.DATE_FORMAT, Locale.CHINA).format(new Date());
+    }
+
+    /**
+     * 时间格式化
+     *
      * @param date 待格式化时间
      * @return 时间字符串
      */
