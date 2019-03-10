@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
  * 定时任务
  *
  * @author dukunbiao(null)  2019-02-18
+ *         https://github.com/dkbnull/SpringBootDemo
  */
 @Component
 public class ScheduledTask {

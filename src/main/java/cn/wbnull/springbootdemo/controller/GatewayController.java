@@ -2,6 +2,7 @@ package cn.wbnull.springbootdemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
 
 /**
  * 入口类
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  *         https://github.com/dkbnull/SpringBootDemo
  */
 @RestController
+@ApiIgnore
 public class GatewayController extends BaseController {
 
     @RequestMapping(value = "/gateway")

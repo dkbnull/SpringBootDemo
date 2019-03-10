@@ -22,7 +22,10 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public JSONObject exceptionHandler(HttpServletRequest servletRequest, Exception e) {
         LoggerUtils.error(servletRequest.getRemoteAddr(), "中台返回前台", servletRequest.getRequestURI(), e.toString());
-        LoggerUtils.error(servletRequest.getRemoteAddr(), "中台返回前台，异常堆栈信息", servletRequest.getRequestURI(), e);
+
+        if (!(e instanceof GlobalException)) {
+            LoggerUtils.error(servletRequest.getRemoteAddr(), "中台返回前台，异常堆栈信息", servletRequest.getRequestURI(), e);
+        }
 
         return ReturnMessage.createReturnMessage("5000", e.getMessage());
     }

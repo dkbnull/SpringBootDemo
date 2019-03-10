@@ -2,10 +2,12 @@ package cn.wbnull.springbootdemo.controller;
 
 import cn.wbnull.springbootdemo.config.PropConfig;
 import cn.wbnull.springbootdemo.config.PropConfigV2;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Scope("prototype")
+@Api(tags = "读取properties配置文件")
 public class PropController {
 
     @Autowired
@@ -27,7 +30,8 @@ public class PropController {
     @Autowired
     private PropConfigV2 propConfigV2;
 
-    @RequestMapping(value = "/properties")
+    @GetMapping(value = "/properties")
+    @ApiOperation("读取properties配置接口")
     public String properties() {
         return "get properties value by ''@Value'' :" +
                 //1、使用@Value注解读取

@@ -15,6 +15,7 @@ import java.util.Date;
  * 自定义log4j日志输出
  *
  * @author dukunbiao(null)  2018-11-26
+ *         https://github.com/dkbnull/Util
  */
 public class GlobalRollingFileAppender extends RollingFileAppender {
 
