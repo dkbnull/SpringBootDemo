@@ -1,6 +1,8 @@
 package cn.wbnull.springbootdemo.util;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.parser.Feature;
 
 import java.util.*;
 
@@ -28,6 +30,16 @@ public class JSONUtils {
     }
 
     /**
+     * 检查JSONArray是否为空
+     *
+     * @param jsonArray 待检查JSONArray
+     * @return true/false
+     */
+    public static boolean isEmpty(JSONArray jsonArray) {
+        return ListUtils.isEmpty(jsonArray);
+    }
+
+    /**
      * String型获取JSON value值
      *
      * @param json JSON
@@ -44,9 +56,8 @@ public class JSONUtils {
      * @param json JSON
      * @param key  key值
      * @return value值
-     * @throws Exception
      */
-    public static int getJSONInt(JSONObject json, String key) throws Exception {
+    public static int getJSONInt(JSONObject json, String key) {
         return MapUtils.getMapInt(json, key);
     }
 
@@ -68,9 +79,8 @@ public class JSONUtils {
      * @param json JSON
      * @param key  key值
      * @return value值
-     * @throws Exception
      */
-    public static double getJSONDouble(JSONObject json, String key) throws Exception {
+    public static double getJSONDouble(JSONObject json, String key) {
         return MapUtils.getMapDouble(json, key);
     }
 
@@ -93,7 +103,17 @@ public class JSONUtils {
      * @return JSONObject
      */
     public static JSONObject javaBeanToJSON(Object object) {
-        return JSONObject.parseObject(JSONObject.toJSONString(object));
+        return JSONObject.parseObject(JSONObject.toJSONString(object), Feature.OrderedField);
+    }
+
+    /**
+     * Java Bean 转JSONArray
+     *
+     * @param object 待转化Java Bean
+     * @return JSONArray
+     */
+    public static JSONArray javaBeanToJSONArray(Object object) {
+        return JSONArray.parseArray(JSONArray.toJSONString(object));
     }
 
     /**
@@ -103,7 +123,7 @@ public class JSONUtils {
      * @return Map
      */
     public static Map<String, String> JSONToMap(JSONObject json) {
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>(json.size());
         List<String> keys = new ArrayList<>(json.keySet());
         Collections.sort(keys);
 

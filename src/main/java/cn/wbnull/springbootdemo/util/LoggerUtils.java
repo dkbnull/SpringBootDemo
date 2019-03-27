@@ -3,7 +3,6 @@ package cn.wbnull.springbootdemo.util;
 import cn.wbnull.springbootdemo.config.UtilConfig;
 import org.apache.log4j.Logger;
 
-
 /**
  * Logger 工具类
  *
@@ -53,7 +52,9 @@ public class LoggerUtils {
     }
 
     public static void error(Object message) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(message);
@@ -61,7 +62,9 @@ public class LoggerUtils {
     }
 
     public static void error(String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(toMessage(Thread.currentThread().getId(), mac, position, method, content));
@@ -69,7 +72,9 @@ public class LoggerUtils {
     }
 
     public static void error(long id, String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(toMessage(id, mac, position, method, content));
@@ -77,7 +82,9 @@ public class LoggerUtils {
     }
 
     public static void error(Object message, Throwable t) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(message, t);
@@ -85,7 +92,9 @@ public class LoggerUtils {
     }
 
     public static void error(String mac, String position, String method, Throwable t) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(toMessage(Thread.currentThread().getId(), mac, position, method, ""), t);
@@ -93,7 +102,9 @@ public class LoggerUtils {
     }
 
     public static void error(long id, String mac, String position, String method, Throwable t) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (errorLevel()) {
             getLogger().error(toMessage(id, mac, position, method, ""), t);
@@ -101,7 +112,9 @@ public class LoggerUtils {
     }
 
     public static void warn(Object message) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (warnLevel()) {
             getLogger().warn(message);
@@ -109,7 +122,9 @@ public class LoggerUtils {
     }
 
     public static void warn(String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (warnLevel()) {
             getLogger().warn(toMessage(Thread.currentThread().getId(), mac, position, method, content));
@@ -117,7 +132,9 @@ public class LoggerUtils {
     }
 
     public static void warn(long id, String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (warnLevel()) {
             getLogger().warn(toMessage(id, mac, position, method, content));
@@ -125,7 +142,9 @@ public class LoggerUtils {
     }
 
     public static void info(Object message) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (infoLevel()) {
             getLogger().info(message);
@@ -133,7 +152,9 @@ public class LoggerUtils {
     }
 
     public static void info(String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (infoLevel()) {
             getLogger().info(toMessage(Thread.currentThread().getId(), mac, position, method, content));
@@ -141,7 +162,9 @@ public class LoggerUtils {
     }
 
     public static void info(long id, String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (infoLevel()) {
             getLogger().info(toMessage(id, mac, position, method, content));
@@ -149,7 +172,9 @@ public class LoggerUtils {
     }
 
     public static void debug(Object message) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (debugLevel()) {
             getLogger().debug(message);
@@ -157,7 +182,9 @@ public class LoggerUtils {
     }
 
     public static void debug(String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (debugLevel()) {
             getLogger().debug(toMessage(Thread.currentThread().getId(), mac, position, method, content));
@@ -165,7 +192,9 @@ public class LoggerUtils {
     }
 
     public static void debug(long id, String mac, String position, String method, String content) {
-        if (offLevel()) return;
+        if (offLevel()) {
+            return;
+        }
 
         if (debugLevel()) {
             getLogger().debug(toMessage(id, mac, position, method, content));

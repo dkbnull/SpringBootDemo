@@ -39,6 +39,16 @@ public class DateUtils {
     /**
      * 时间格式化
      *
+     * @param format 格式
+     * @return 时间字符串
+     */
+    public static String dateFormat(String format) {
+        return new SimpleDateFormat(format, Locale.CHINA).format(new Date());
+    }
+
+    /**
+     * 时间格式化
+     *
      * @param date   待格式化时间
      * @param format 格式
      * @return 时间字符串
@@ -53,6 +63,7 @@ public class DateUtils {
      * @param dateValue 待格式化时间字符串
      * @param toFormat  要格式化的格式
      * @return 时间字符串
+     * @throws Exception
      */
     public static String dateFormat(String dateValue, String toFormat) throws Exception {
         if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(toFormat)) {
@@ -70,6 +81,7 @@ public class DateUtils {
      * @param fromFormat 待格式化时间字符串格式
      * @param toFormat   要格式化的格式
      * @return 时间字符串
+     * @throws Exception
      */
     public static String dateFormat(String dateValue, String fromFormat, String toFormat) throws Exception {
         if (StringUtils.isEmpty(dateValue) || StringUtils.isEmpty(fromFormat) || StringUtils.isEmpty(toFormat)) {

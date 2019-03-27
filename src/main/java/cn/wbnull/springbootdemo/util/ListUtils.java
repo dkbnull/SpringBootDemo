@@ -20,6 +20,16 @@ public class ListUtils {
      * @return true/false
      */
     public static boolean isEmpty(List list) {
-        return (list == null || list.isEmpty());
+        boolean isNull = (list == null || list.isEmpty());
+
+        if (isNull) {
+            return true;
+        }
+
+        for (Object object : list) {
+            isNull = isNull || object == null;
+        }
+
+        return isNull;
     }
 }

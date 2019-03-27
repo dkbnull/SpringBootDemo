@@ -50,9 +50,8 @@ public class MapUtils {
      * @param map Map
      * @param key key值
      * @return value值
-     * @throws Exception
      */
-    public static int getMapInt(Map map, String key) throws Exception {
+    public static int getMapInt(Map map, String key) {
         if (isEmpty(map) || StringUtils.isEmpty(key)) {
             return 0;
         }
@@ -94,9 +93,8 @@ public class MapUtils {
      * @param map Map
      * @param key key值
      * @return value值
-     * @throws Exception
      */
-    public static double getMapDouble(Map map, String key) throws Exception {
+    public static double getMapDouble(Map map, String key) {
         if (isEmpty(map) || StringUtils.isEmpty(key)) {
             return 0d;
         }
@@ -140,5 +138,15 @@ public class MapUtils {
      */
     public static Map<String, String> javaBeanToMap(Object object) {
         return JSONUtils.JSONToMap(JSONObject.parseObject(JSONObject.toJSONString(object)));
+    }
+
+    /**
+     * Map转 Java Bean
+     *
+     * @param map Map
+     * @return Java Bean
+     */
+    public static <T> T mapToJavaBean(Map map, Class<T> clazz) {
+        return JSONObject.parseObject(new JSONObject(map).toJSONString(), clazz);
     }
 }

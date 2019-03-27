@@ -1,6 +1,6 @@
 package cn.wbnull.springbootdemo.boot;
 
-import cn.wbnull.springbootdemo.constant.ReturnMessage;
+import cn.wbnull.springbootdemo.model.ReturnMessage;
 import cn.wbnull.springbootdemo.util.LoggerUtils;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.ExceptionHandler;

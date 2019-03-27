@@ -1,5 +1,6 @@
-package cn.wbnull.springbootdemo.constant;
+package cn.wbnull.springbootdemo.model;
 
+import cn.wbnull.springbootdemo.constant.DemoConstants;
 import com.alibaba.fastjson.JSONObject;
 
 /**
@@ -12,6 +13,14 @@ public class ReturnMessage {
 
     private ReturnMessage() {
 
+    }
+
+    public static JSONObject success() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(DemoConstants.CODE, "1");
+        jsonObject.put(DemoConstants.MESSAGE, "SUCCESS");
+
+        return jsonObject;
     }
 
     public static JSONObject createReturnMessage(String code, String message) {

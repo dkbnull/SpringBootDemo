@@ -3,6 +3,8 @@ package cn.wbnull.springbootdemo.util;
 import cn.wbnull.springbootdemo.constant.UtilConstants;
 
 import java.io.UnsupportedEncodingException;
+import java.security.SecureRandom;
+import java.util.Random;
 import java.util.regex.Pattern;
 
 /**
@@ -16,7 +18,12 @@ public class StringUtils {
     public static final String STRING_TYPE_RIGHT = "R";
     public static final String STRING_TYPE_LEFT = "L";
 
-    private static String DIGITS = "0123456789abcdef";
+    private static final String DIGITS = "0123456789abcdef";
+    private static final String SYMBOLS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final Random RANDOM = new SecureRandom();
+
+    private static Pattern PATTERN_IS_NUMERIC = Pattern.compile("-?[0-9]*+.?[0-9]*");
+    private static Pattern PATTERN_IS_INTEGER = Pattern.compile("-?[0-9]*");
 
     private StringUtils() {
     }
@@ -69,7 +76,7 @@ public class StringUtils {
      * @return true/false
      */
     public static boolean isNumeric(String value) {
-        return (!isEmpty(value)) && Pattern.compile("-?[0-9]*+.?[0-9]*").matcher(value).matches();
+        return (!isEmpty(value)) && PATTERN_IS_NUMERIC.matcher(value).matches();
     }
 
     /**
@@ -79,7 +86,7 @@ public class StringUtils {
      * @return true/false
      */
     public static boolean isInteger(String value) {
-        return (!isEmpty(value)) && Pattern.compile("-?[0-9]*").matcher(value).matches();
+        return (!isEmpty(value)) && PATTERN_IS_INTEGER.matcher(value).matches();
     }
 
     /**
@@ -143,10 +150,25 @@ public class StringUtils {
     public static String random(int length) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < length; i++) {
-            sb.append((int) (Math.random() * 10));
+            sb.append((new Random().nextInt(10)));
         }
 
         return sb.toString();
+    }
+
+    /**
+     * 获取指定长度随机字符串（数字、字母）
+     *
+     * @param length 随机字符串长度
+     * @return
+     */
+    public static String randomNonce(int length) {
+        char[] nonceChars = new char[length];
+        for (int index = 0; index < nonceChars.length; ++index) {
+            nonceChars[index] = SYMBOLS.charAt(RANDOM.nextInt(SYMBOLS.length()));
+        }
+
+        return new String(nonceChars);
     }
 
     /**
@@ -211,10 +233,10 @@ public class StringUtils {
      * @return 16进制字符串
      */
     public static String byteToHex(byte[] data) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < data.length; i++) {
-            int v = data[i] & 0xff;
+        for (byte byt : data) {
+            int v = byt & 0xff;
 
             sb.append(DIGITS.charAt(v >> 4));
             sb.append(DIGITS.charAt(v & 0xf));
@@ -375,15 +397,15 @@ public class StringUtils {
 
         }
 
-        StringBuffer res = new StringBuffer();
-        StringBuffer bf = new StringBuffer(value);
+        StringBuilder res = new StringBuilder();
+        StringBuilder bf = new StringBuilder(value);
 
         if (STRING_TYPE_RIGHT.equalsIgnoreCase(tag)) {
             for (int i = 0; i < length - lengthValue; i++) {
                 res = bf.append(fill);
             }
         } else if (STRING_TYPE_LEFT.equals(tag)) {
-            StringBuffer bf1 = new StringBuffer();
+            StringBuilder bf1 = new StringBuilder();
             for (int i = 0; i < length - lengthValue; i++) {
                 res = bf1.append(fill);
             }
