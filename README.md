@@ -47,5 +47,5 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 ## Spring Boot实现文件上传与下载
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/88858717](https://blog.csdn.net/dkbnull/article/details/88858717)
+* 微信：[https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w](https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w)
 
-  
