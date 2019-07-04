@@ -1,0 +1,16 @@
+#Tomcat
+server:
+  port: 8090
+  servlet:
+    context-path: /springbootdemo
+#
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #对应mapper映射xml文件所在路径
+  type-aliases-package: cn.wbnull.springbootdemo.model  #对应实体类路径

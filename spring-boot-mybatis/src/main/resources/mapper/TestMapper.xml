@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wbnull.springbootdemo.dao.TestMapperV2">
+    <resultMap id="BaseResultMap" type="cn.wbnull.springbootdemo.model.TestModel">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, name
+    </sql>
+    <select id="select" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from test
+    </select>
+    <insert id="insert" parameterType="cn.wbnull.springbootdemo.model.TestModel">
+        insert into test (id, name
+        )
+        values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}
+        )
+    </insert>
+</mapper>
