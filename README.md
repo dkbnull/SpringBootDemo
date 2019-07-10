@@ -1,10 +1,12 @@
 # SpringBootDemo
 
-> base	Java 1.8
->
-> * Spring Boot：2.1.1.RELEASE
-
 GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/SpringBootDemo)
+
+## 开发环境
+
+- IDE：IntelliJ IDEA
+- JDK：1.8
+- Spring Boot：2.1.1.RELEASE
 
 ## Spring Boot 专栏
 
@@ -23,6 +25,7 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/81953190](https://blog.csdn.net/dkbnull/article/details/81953190)
 * 微信：[https://mp.weixin.qq.com/s/swtkNq6CLMsP4uc4PgaVHg](https://mp.weixin.qq.com/s/swtkNq6CLMsP4uc4PgaVHg)
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404275977214638710](https://weibo.com/ttarticle/p/show?id=2309404275977214638710)
+* 知乎：[https://zhuanlan.zhihu.com/p/73059356](https://zhuanlan.zhihu.com/p/73059356)
 
 ## Spring Boot使用AOP实现拦截器
 
@@ -56,4 +59,9 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/88858717](https://blog.csdn.net/dkbnull/article/details/88858717)
 * 微信：[https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w](https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w)
+
+## Spring Boot 整合Logback记录日志
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/95390533](https://blog.csdn.net/dkbnull/article/details/95390533)
+* 微信：[https://mp.weixin.qq.com/s/YDDsMcvmQURn4D9J9kNfQQ](https://mp.weixin.qq.com/s/YDDsMcvmQURn4D9J9kNfQQ)
 

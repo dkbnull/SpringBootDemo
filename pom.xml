@@ -17,6 +17,7 @@
         <module>spring-boot-scheduled</module>
         <module>spring-boot-swagger2</module>
         <module>spring-boot-log</module>
+        <module>spring-boot-logback</module>
     </modules>
 
     <name>SpringBootDemo</name>
