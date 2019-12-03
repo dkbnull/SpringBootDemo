@@ -32,6 +32,7 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/82847647](https://blog.csdn.net/dkbnull/article/details/82847647)
 * 微信：[https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q](https://mp.weixin.qq.com/s/COFnrvWOcZPM7Ec-0bv98Q)
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404288955024574905](https://weibo.com/ttarticle/p/show?id=2309404288955024574905)
+* 知乎：[https://zhuanlan.zhihu.com/p/95083475](https://zhuanlan.zhihu.com/p/95083475)
 
 ##  Spring Boot自定义log4j日志输出
 
