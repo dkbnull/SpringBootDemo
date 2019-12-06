@@ -12,6 +12,7 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/column/info/26341](https://blog.csdn.net/dkbnull/column/info/26341)
 * 知乎：[https://zhuanlan.zhihu.com/c_1104766024125341696](https://zhuanlan.zhihu.com/c_1104766024125341696)
+* 微博：[https://weibo.com/a/hot/7581491643095042_1.html](https://weibo.com/a/hot/7581491643095042_1.html)
 
 ## 第一个Spring Boot程序
 
@@ -52,6 +53,8 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/87659898](https://blog.csdn.net/dkbnull/article/details/87659898)
 * 微信：[https://mp.weixin.qq.com/s/qJZpCjcZYQWnmDkztiA_uQ](https://mp.weixin.qq.com/s/qJZpCjcZYQWnmDkztiA_uQ)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404446645717696521](https://weibo.com/ttarticle/p/show?id=2309404446645717696521)
+* 知乎：[https://zhuanlan.zhihu.com/p/95813468](https://zhuanlan.zhihu.com/p/95813468)
 
 ## Spring Boot整合Swagger2
 
