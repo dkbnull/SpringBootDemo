@@ -10,7 +10,7 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 ## Spring Boot 专栏
 
-* CSDN：[https://blog.csdn.net/dkbnull/column/info/26341](https://blog.csdn.net/dkbnull/column/info/26341)
+* CSDN：[https://blog.csdn.net/dkbnull/category_9278145.html](https://blog.csdn.net/dkbnull/category_9278145.html)
 * 知乎：[https://zhuanlan.zhihu.com/c_1104766024125341696](https://zhuanlan.zhihu.com/c_1104766024125341696)
 * 微博：[https://weibo.com/a/hot/7581491643095042_1.html](https://weibo.com/a/hot/7581491643095042_1.html)
 
@@ -60,6 +60,8 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/88380987](https://blog.csdn.net/dkbnull/article/details/88380987)
 * 微信：[https://mp.weixin.qq.com/s/hAg-sBKurC5QtcA5JFzjTQ](https://mp.weixin.qq.com/s/hAg-sBKurC5QtcA5JFzjTQ)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404447241761849549](https://weibo.com/ttarticle/p/show?id=2309404447241761849549)
+* 知乎：[https://zhuanlan.zhihu.com/p/95993014](https://zhuanlan.zhihu.com/p/95993014)
 
 ## Spring Boot实现文件上传与下载
 
