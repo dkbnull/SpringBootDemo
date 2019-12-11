@@ -67,6 +67,8 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/88858717](https://blog.csdn.net/dkbnull/article/details/88858717)
 * 微信：[https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w](https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404448466020466817](https://weibo.com/ttarticle/p/show?id=2309404448466020466817)
+* 知乎：[https://zhuanlan.zhihu.com/p/96866094](https://zhuanlan.zhihu.com/p/96866094)
 
 ## Spring Boot 整合Logback记录日志
 
