@@ -74,4 +74,6 @@ GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/Sp
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/95390533](https://blog.csdn.net/dkbnull/article/details/95390533)
 * 微信：[https://mp.weixin.qq.com/s/YDDsMcvmQURn4D9J9kNfQQ](https://mp.weixin.qq.com/s/YDDsMcvmQURn4D9J9kNfQQ)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404453119672057989](https://weibo.com/ttarticle/p/show?id=2309404453119672057989)
+* 知乎：[https://zhuanlan.zhihu.com/p/99188924](https://zhuanlan.zhihu.com/p/99188924)
 
