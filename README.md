@@ -1,6 +1,6 @@
 # SpringBootDemo
 
-GitHub	[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/SpringBootDemo)
+GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/SpringBootDemo)
 
 ## 开发环境
 

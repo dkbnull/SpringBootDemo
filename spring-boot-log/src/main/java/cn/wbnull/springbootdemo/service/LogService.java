@@ -29,11 +29,11 @@ public class LogService {
         }
         response.setContentType("application/force-download");
         response.addHeader("Content-Disposition", "attachment;fileName=" + name);
+        response.setContentLength((int) file.length());
 
         byte[] buffer = new byte[1024];
         try (FileInputStream fis = new FileInputStream(file);
-                      BufferedInputStream bis = new BufferedInputStream(fis)) {
-
+             BufferedInputStream bis = new BufferedInputStream(fis)) {
             OutputStream os = response.getOutputStream();
 
             int i = bis.read(buffer);
