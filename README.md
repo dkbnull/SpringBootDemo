@@ -77,3 +77,10 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404453119672057989](https://weibo.com/ttarticle/p/show?id=2309404453119672057989)
 * 知乎：[https://zhuanlan.zhihu.com/p/99188924](https://zhuanlan.zhihu.com/p/99188924)
 
+## Spring Boot整合WebSocket实现实时消息推送(spring-boot-websocket)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/125577993](https://blog.csdn.net/dkbnull/article/details/125577993)
+* 微信：[https://mp.weixin.qq.com/s/Je9QSWstU5bxDakFCILFZg](https://mp.weixin.qq.com/s/Je9QSWstU5bxDakFCILFZg)
+* 微博：[https://weibo.com/ttarticle/p/show?id=2309404786910215406111](https://weibo.com/ttarticle/p/show?id=2309404786910215406111)
+* 知乎：[https://zhuanlan.zhihu.com/p/536839230](https://zhuanlan.zhihu.com/p/536839230)
+
