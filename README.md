@@ -63,7 +63,7 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404447241761849549](https://weibo.com/ttarticle/p/show?id=2309404447241761849549)
 * 知乎：[https://zhuanlan.zhihu.com/p/95993014](https://zhuanlan.zhihu.com/p/95993014)
 
-## Spring Boot实现文件上传与下载（spring-boot-log）
+## Spring Boot实现文件上传与下载（spring-boot-file）
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/88858717](https://blog.csdn.net/dkbnull/article/details/88858717)
 * 微信：[https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w](https://mp.weixin.qq.com/s/rd6yhfMjwU7Pn3c46bKj7w)

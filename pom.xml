@@ -16,7 +16,7 @@
         <module>spring-boot-mybatis</module>
         <module>spring-boot-scheduled</module>
         <module>spring-boot-swagger2</module>
-        <module>spring-boot-log</module>
+        <module>spring-boot-file</module>
         <module>spring-boot-logback</module>
     </modules>
 

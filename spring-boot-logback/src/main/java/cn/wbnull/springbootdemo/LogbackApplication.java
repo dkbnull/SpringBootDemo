@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * https://github.com/dkbnull/SpringBootDemo
  */
 @SpringBootApplication
-public class SpringBootDemoApplication {
+public class LogbackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoApplication.class, args);
+        SpringApplication.run(LogbackApplication.class, args);
     }
 }

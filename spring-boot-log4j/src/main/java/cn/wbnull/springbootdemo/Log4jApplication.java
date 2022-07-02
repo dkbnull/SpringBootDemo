@@ -2,7 +2,6 @@ package cn.wbnull.springbootdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Spring Boot 启动类
@@ -11,10 +10,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * https://github.com/dkbnull/SpringBootDemo
  */
 @SpringBootApplication
-@EnableScheduling
-public class SpringBootDemoApplication {
+public class Log4jApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoApplication.class, args);
+        SpringApplication.run(Log4jApplication.class, args);
     }
 }

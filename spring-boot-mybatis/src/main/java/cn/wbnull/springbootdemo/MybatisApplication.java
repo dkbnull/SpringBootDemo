@@ -1,5 +1,6 @@
 package cn.wbnull.springbootdemo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,9 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * https://github.com/dkbnull/SpringBootDemo
  */
 @SpringBootApplication
-public class SpringBootDemoApplication {
+@MapperScan("cn.wbnull.springbootdemo.dao")
+public class MybatisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoApplication.class, args);
+        SpringApplication.run(MybatisApplication.class, args);
     }
 }
