@@ -84,3 +84,8 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 * 微博：[https://weibo.com/ttarticle/p/show?id=2309404786910215406111](https://weibo.com/ttarticle/p/show?id=2309404786910215406111)
 * 知乎：[https://zhuanlan.zhihu.com/p/536839230](https://zhuanlan.zhihu.com/p/536839230)
 
+## Spring Boot整合MyBatis Plus连接数据库(spring-boot-mybatis-plus)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/136331111](https://blog.csdn.net/dkbnull/article/details/136331111)
+* 微信：[https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ](https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ)
+* 知乎：[https://zhuanlan.zhihu.com/p/684251625](https://zhuanlan.zhihu.com/p/684251625)
