@@ -2,6 +2,8 @@
 
 GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/SpringBootDemo)
 
+Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/SpringBootDemo)
+
 ## 开发环境
 
 - IDE：IntelliJ IDEA
@@ -89,3 +91,10 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/136331111](https://blog.csdn.net/dkbnull/article/details/136331111)
 * 微信：[https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ](https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ)
 * 知乎：[https://zhuanlan.zhihu.com/p/684251625](https://zhuanlan.zhihu.com/p/684251625)
+
+## Spring Boot整合Mybatis配置多数据源(spring-boot-mybatis-dynamic)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/136433910](https://blog.csdn.net/dkbnull/article/details/136433910)
+* 微信：[https://mp.weixin.qq.com/s/6q3xLMg-QFo5_6RsD1h4YA](https://mp.weixin.qq.com/s/6q3xLMg-QFo5_6RsD1h4YA)
+* 知乎：[https://zhuanlan.zhihu.com/p/685038746](https://zhuanlan.zhihu.com/p/685038746)
+
