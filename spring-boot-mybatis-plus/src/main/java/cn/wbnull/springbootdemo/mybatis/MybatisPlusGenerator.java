@@ -58,6 +58,9 @@ public class MybatisPlusGenerator {
                 .mapperBuilder()
                 .enableBaseResultMap()
                 .enableBaseColumnList()
+                .entityBuilder()
+                .enableLombok()
+                .enableTableFieldAnnotation()
                 .build();
     }
 

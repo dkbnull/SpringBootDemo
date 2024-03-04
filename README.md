@@ -92,7 +92,7 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 * 微信：[https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ](https://mp.weixin.qq.com/s/ZJTKX_gmn6ffsY7hNrspHQ)
 * 知乎：[https://zhuanlan.zhihu.com/p/684251625](https://zhuanlan.zhihu.com/p/684251625)
 
-## Spring Boot整合Mybatis配置多数据源(spring-boot-mybatis-dynamic)
+## Spring Boot整合MyBatis配置多数据源(spring-boot-mybatis-dynamic)
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/136433910](https://blog.csdn.net/dkbnull/article/details/136433910)
 * 微信：[https://mp.weixin.qq.com/s/6q3xLMg-QFo5_6RsD1h4YA](https://mp.weixin.qq.com/s/6q3xLMg-QFo5_6RsD1h4YA)
