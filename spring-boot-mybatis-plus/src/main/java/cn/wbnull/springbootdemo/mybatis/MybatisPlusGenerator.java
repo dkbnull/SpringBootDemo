@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
  * MybatisPlusGenerator
  *
- * @author null  2024-02-19
+ * @author dukunbiao(null)  2024-02-19
  * https://github.com/dkbnull/SpringBootDemo
  */
 public class MybatisPlusGenerator {

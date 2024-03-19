@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * User
  *
- * @author null  2024-02-19
+ * @author dukunbiao(null)  2024-02-19
  * https://github.com/dkbnull/SpringBootDemo
  */
 @Data

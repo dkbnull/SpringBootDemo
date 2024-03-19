@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * UserMapper
  *
- * @author null  2024-02-19
+ * @author dukunbiao(null)  2024-02-19
  * https://github.com/dkbnull/SpringBootDemo
  */
 @Repository
