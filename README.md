@@ -1,5 +1,3 @@
-# SpringBootDemo
-
 GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/SpringBootDemo)
 
 Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/SpringBootDemo)
@@ -8,7 +6,7 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 
 - IDE：IntelliJ IDEA
 - JDK：1.8
-- Spring Boot：2.1.1.RELEASE
+- Spring Boot：2.7.18
 
 ## Spring Boot 专栏
 
@@ -102,4 +100,11 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/136611367](https://blog.csdn.net/dkbnull/article/details/136611367)
 * 微信：[https://mp.weixin.qq.com/s/e6g0K6n9Uu8GdSOqu6iNwg](https://mp.weixin.qq.com/s/e6g0K6n9Uu8GdSOqu6iNwg)
-* 知乎：[https://zhuanlan.zhihu.com/p/686275755](
+* 知乎：[https://zhuanlan.zhihu.com/p/686275755](https://zhuanlan.zhihu.com/p/686275755)
+
+## Spring Boot整合Spring Security(spring-boot-security)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/136920791](https://blog.csdn.net/dkbnull/article/details/136920791)
+* 微信：[https://mp.weixin.qq.com/s/0Tl3DVPTO9QqOI7bMcf6BA](https://mp.weixin.qq.com/s/0Tl3DVPTO9QqOI7bMcf6BA)
+* 知乎：[https://zhuanlan.zhihu.com/p/688341417](https://zhuanlan.zhihu.com/p/688341417)
+

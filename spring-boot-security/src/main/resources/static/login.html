@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>登录</h2>
+    <form action="/login" method="post">
+        <label for="username">用户名</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">密码</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        记住我：<input type="checkbox" name="remember-me" title="记住我"><br><br>
+
+        <button type="submit">登 录</button>
+    </form>
+</div>
+</body>
+</html>
