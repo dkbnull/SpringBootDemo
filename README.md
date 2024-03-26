@@ -2,6 +2,8 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 
 Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/SpringBootDemo)
 
+微信公众号：![qrcode_for_gh_645cbfc12237_258](README.assets/qrcode_for_gh_645cbfc12237_258.jpg)
+
 ## 开发环境
 
 - IDE：IntelliJ IDEA
