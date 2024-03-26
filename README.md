@@ -110,3 +110,8 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 * 微信：[https://mp.weixin.qq.com/s/0Tl3DVPTO9QqOI7bMcf6BA](https://mp.weixin.qq.com/s/0Tl3DVPTO9QqOI7bMcf6BA)
 * 知乎：[https://zhuanlan.zhihu.com/p/688341417](https://zhuanlan.zhihu.com/p/688341417)
 
+## Spring Boot整合Redis(spring-boot-redis)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/137062282](https://blog.csdn.net/dkbnull/article/details/137062282)
+* 微信：
+* 知乎：[https://zhuanlan.zhihu.com/p/689217297](https://zhuanlan.zhihu.com/p/689217297)
