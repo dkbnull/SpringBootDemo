@@ -2,7 +2,9 @@ GitHub：[https://github.com/dkbnull/SpringBootDemo](https://github.com/dkbnull/
 
 Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/SpringBootDemo)
 
-微信公众号：![qrcode_for_gh_645cbfc12237_258](README.assets/qrcode_for_gh_645cbfc12237_258.jpg)
+**微信公众号：**
+
+![qrcode_for_gh_645cbfc12237_258](README.assets/qrcode_for_gh_645cbfc12237_258.jpg)
 
 ## 开发环境
 
@@ -113,5 +115,5 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 ## Spring Boot整合Redis(spring-boot-redis)
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/137062282](https://blog.csdn.net/dkbnull/article/details/137062282)
-* 微信：
+* 微信：[https://mp.weixin.qq.com/s/MgIN2-WptF8pJGnkerhHaQ](https://mp.weixin.qq.com/s/MgIN2-WptF8pJGnkerhHaQ)
 * 知乎：[https://zhuanlan.zhihu.com/p/689217297](https://zhuanlan.zhihu.com/p/689217297)
