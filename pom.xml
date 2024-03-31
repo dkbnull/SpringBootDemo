@@ -24,6 +24,7 @@
         <module>spring-boot-mybatis-plus-dynamic</module>
         <module>spring-boot-security</module>
         <module>spring-boot-redis</module>
+        <module>spring-boot-i18n</module>
     </modules>
 
     <name>SpringBootDemo</name>

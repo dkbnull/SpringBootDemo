@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .language {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .language a {
+            color: blue;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        button:hover,
+        a:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="" method="post">
+        <label for="username" th:text="#{login.username}"></label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password" th:text="#{login.password}"></label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit" th:text="#{login.btn}"></button>
+    </form>
+</div>
+<div class="language">
+    <a th:href="@{/login.html(l=zh_CN)}">中文</a>
+    <a th:href="@{/login.html(l=en_US)}">English</a>
+</div>
+</body>
+</html>

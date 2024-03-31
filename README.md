@@ -117,3 +117,9 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/137062282](https://blog.csdn.net/dkbnull/article/details/137062282)
 * 微信：[https://mp.weixin.qq.com/s/MgIN2-WptF8pJGnkerhHaQ](https://mp.weixin.qq.com/s/MgIN2-WptF8pJGnkerhHaQ)
 * 知乎：[https://zhuanlan.zhihu.com/p/689217297](https://zhuanlan.zhihu.com/p/689217297)
+
+## Spring Boot页面国际化
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/137202903](https://blog.csdn.net/dkbnull/article/details/137202903)
+* 微信：[https://mp.weixin.qq.com/s/UA5nVO8BQxeWUjGfW1wocg](https://mp.weixin.qq.com/s/UA5nVO8BQxeWUjGfW1wocg)
+* 知乎：[https://zhuanlan.zhihu.com/p/690021887](https://zhuanlan.zhihu.com/p/690021887)
