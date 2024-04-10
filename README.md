@@ -130,3 +130,9 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 * 微信：[https://mp.weixin.qq.com/s/nz5fmX3cogG0gX8UIm3nww](https://mp.weixin.qq.com/s/nz5fmX3cogG0gX8UIm3nww)
 * 知乎：[https://zhuanlan.zhihu.com/p/690993440](https://zhuanlan.zhihu.com/p/690993440)
 
+### Spring Boot整合Dubbo+ZooKeeper(spring-boot-dubbo-provider、spring-boot-dubbo-consumer)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/137616028](https://blog.csdn.net/dkbnull/article/details/137616028)
+* 微信：[https://mp.weixin.qq.com/s/yB5BZT8MZNGek589JL5jiw](https://mp.weixin.qq.com/s/yB5BZT8MZNGek589JL5jiw)
+* 知乎：[https://zhuanlan.zhihu.com/p/691814446](https://zhuanlan.zhihu.com/p/691814446)
+

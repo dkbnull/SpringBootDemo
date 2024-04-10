@@ -1,0 +1,14 @@
+#访问端口
+server:
+  port: 8090
+#
+dubbo:
+  #服务应用名字
+  application:
+    name: dubbo-provider
+  #注册中心地址
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  #需注册的服务
+  scan:
+    base-packages: cn.wbnull.springbootdemo.service

@@ -26,6 +26,8 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-i18n</module>
         <module>spring-boot-jar</module>
+        <module>spring-boot-dubbo-provider</module>
+        <module>spring-boot-dubbo-consumer</module>
     </modules>
 
     <name>SpringBootDemo</name>

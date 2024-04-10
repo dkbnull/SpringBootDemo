@@ -1,0 +1,11 @@
+#访问端口
+server:
+  port: 8091
+#
+dubbo:
+  #消费者名字
+  application:
+    name: dubbo-consumer
+  #注册中心地址
+  registry:
+    address: zookeeper://127.0.0.1:2181
