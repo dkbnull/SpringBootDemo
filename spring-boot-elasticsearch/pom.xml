@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.wbnull</groupId>
+        <artifactId>spring-boot-demo</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>spring-boot-elasticsearch</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <elasticsearch.version>7.17.18</elasticsearch.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+
+        <!--   https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/7.17/installation.html#class-not-found-jsonprovider     -->
+        <!--   It may happen that after setting up the dependencies, your application fails with ClassNotFoundException: jakarta.json.spi.JsonProvider.     -->
+        <!--   If this happens, you have to explicitly add the jakarta.json:jakarta.json-api:2.0.1 dependency.     -->
+        <dependency>
+            <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
