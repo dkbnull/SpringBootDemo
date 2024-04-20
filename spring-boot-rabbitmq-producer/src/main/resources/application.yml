@@ -1,0 +1,14 @@
+server:
+  port: 8090
+#
+#配置RabbitMQ服务
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    virtual-host: /
+    host: 127.0.0.1
+    port: 5672
+    #none 禁用发布确认模式，默认值
+    #correlated 消息成功发布到交换机后会触发回调方法
+    publisher-confirm-type: correlated

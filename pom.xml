@@ -29,6 +29,8 @@
         <module>spring-boot-dubbo-provider</module>
         <module>spring-boot-dubbo-consumer</module>
         <module>spring-boot-elasticsearch</module>
+        <module>spring-boot-rabbitmq-producer</module>
+        <module>spring-boot-rabbitmq-consumer</module>
     </modules>
 
     <name>SpringBootDemo</name>

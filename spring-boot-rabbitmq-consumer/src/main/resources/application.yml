@@ -1,0 +1,11 @@
+server:
+  port: 8091
+#
+#配置RabbitMQ服务
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    virtual-host: /
+    host: 127.0.0.1
+    port: 5672
