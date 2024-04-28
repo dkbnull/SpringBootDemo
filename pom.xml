@@ -31,6 +31,7 @@
         <module>spring-boot-elasticsearch</module>
         <module>spring-boot-rabbitmq-producer</module>
         <module>spring-boot-rabbitmq-consumer</module>
+        <module>spring-boot-cors</module>
     </modules>
 
     <name>SpringBootDemo</name>

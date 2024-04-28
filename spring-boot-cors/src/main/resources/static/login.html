@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+
+    <style>
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button onclick="submit()">登 录</button>
+</div>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    function submit() {
+        $.ajax({
+            url: "http:127.0.0.1:8090/user/login",
+            type: "POST",
+            success: function (result) {
+                alert(result);
+            }
+        });
+    }
+</script>
+</html>
