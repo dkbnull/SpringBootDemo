@@ -151,3 +151,6 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 ## Spring Boot跨域问题解决(spring-boot-cors)
 
 * CSDN：[https://blog.csdn.net/dkbnull/article/details/138294214](https://blog.csdn.net/dkbnull/article/details/138294214)
+* 微信：[https://mp.weixin.qq.com/s/sUdk5E6cptl0QaWK2qiXUw](https://mp.weixin.qq.com/s/sUdk5E6cptl0QaWK2qiXUw)
+* 知乎：[https://zhuanlan.zhihu.com/p/695342039](https://zhuanlan.zhihu.com/p/695342039)
+
