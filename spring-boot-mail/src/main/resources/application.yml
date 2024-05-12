@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  mail:
+    #邮箱地址
+    username: 921xxxxxx@qq.com
+    #授权码
+    password: vsxzxxxxxxxxxcbg
+    #发送服务器
+    host: smtp.qq.com
+    #开启加密授权验证
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true

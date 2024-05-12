@@ -32,6 +32,7 @@
         <module>spring-boot-rabbitmq-producer</module>
         <module>spring-boot-rabbitmq-consumer</module>
         <module>spring-boot-cors</module>
+        <module>spring-boot-mail</module>
     </modules>
 
     <name>SpringBootDemo</name>

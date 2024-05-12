@@ -154,3 +154,8 @@ Gitee：[https://gitee.com/dkbnull/SpringBootDemo](https://gitee.com/dkbnull/Spr
 * 微信：[https://mp.weixin.qq.com/s/sUdk5E6cptl0QaWK2qiXUw](https://mp.weixin.qq.com/s/sUdk5E6cptl0QaWK2qiXUw)
 * 知乎：[https://zhuanlan.zhihu.com/p/695342039](https://zhuanlan.zhihu.com/p/695342039)
 
+## Spring Boot支持发送邮件(spring-boot-mail)
+
+* CSDN：[https://blog.csdn.net/dkbnull/article/details/138768207](https://blog.csdn.net/dkbnull/article/details/138768207)
+* 微信：[https://mp.weixin.qq.com/s/qGInYLdwgOblO9ebZdZCFg](https://mp.weixin.qq.com/s/qGInYLdwgOblO9ebZdZCFg)
+* 知乎：[https://zhuanlan.zhihu.com/p/697359156](https://zhuanlan.zhihu.com/p/697359156)
